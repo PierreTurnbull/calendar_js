@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
+  <title>Date</title>
+  <style>
+    .calendar {
+      width: 300px;
+      height: 500px;
+      background-color: #EEE;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+    }
+
+    .day,
+    .month,
+    .year {
+      width: 250px;
+      height: 50px;
+      background-color: #DDD;
+      margin: 50px auto 50px;
+      font-size: 40px;
+      font-family: fantasy;
+      text-align: center;
+      color: #B23;
+    }
+
+    .change {
+      position: absolute;
+    }
+
+    .add {
+      left: 40px;
+    }
+
+    .change:nth-last-child(1) {
+      bottom: 30px;
+    }
+
+    .change:nth-last-child(2) {
+      bottom: 90px;
+    }
+
+    .change:nth-last-child(3) {
+      bottom: 150px;
+    }
+
+    .change:nth-last-child(4) {
+      bottom: 30px;
+    }
+
+    .change:nth-last-child(5) {
+      bottom: 90px;
+    }
+
+    .change:nth-last-child(6) {
+      bottom: 150px;
+    }
+
+    .del {
+      right: 40px;
+    }
+  </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+  <div class="calendar">
+    <div class="day">29</div>
+    <div class="month">01</div>
+    <div class="year">2000</div>
+
+    <button class="add change add_day">+1 day</button>
+    <button class="add change add_month">+1 month</button>
+    <button class="add change add_year">+1 year</button>
+    <button class="del change del_day">-1 day</button>
+    <button class="del change del_month">-1 month</button>
+    <button class="del change del_year">-1 year</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
